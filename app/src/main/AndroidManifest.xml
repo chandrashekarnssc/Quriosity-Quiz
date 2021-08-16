@@ -10,35 +10,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuriosityQuiz">
-        
+        <activity android:name=".Result"></activity>
         <activity
             android:name=".cur_affairs"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyQuiz"
             android:windowSoftInputMode="adjustResize"
             tools:ignore="DuplicateActivity" />
-
         <activity
             android:name=".capitals"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyQuiz"
             android:windowSoftInputMode="adjustResize"
             tools:ignore="DuplicateActivity" />
-
         <activity
             android:name=".science_tech"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyQuiz"
             android:windowSoftInputMode="adjustResize"
             tools:ignore="DuplicateActivity" />
-
         <activity
             android:name=".sports"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyQuiz"
             android:windowSoftInputMode="adjustResize"
             tools:ignore="DuplicateActivity" />
-
         <activity
             android:name=".wildlife"
             android:screenOrientation="portrait"
