@@ -10,8 +10,12 @@
     tools:context=".Topics_page"
     android:orientation="vertical"
     android:padding="7dp"
-    android:background="@drawable/layout">
+    android:background="@drawable/layout"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/choose_topic"
@@ -26,8 +30,8 @@
 
     <ImageButton
         android:id="@+id/wildlife"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:padding="10dp"
         android:layout_marginTop="20dp"
         android:layout_margin="10dp"
@@ -37,8 +41,8 @@
 
     <ImageButton
         android:id="@+id/current_affairs"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:padding="10dp"
         android:layout_margin="10dp"
         android:layout_gravity="center"
@@ -46,8 +50,8 @@
 
     <ImageButton
         android:id="@+id/science"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:padding="10dp"
         android:layout_margin="10dp"
         android:layout_gravity="center"
@@ -55,8 +59,8 @@
 
     <ImageButton
         android:id="@+id/sports"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:padding="10dp"
         android:layout_margin="10dp"
         android:layout_gravity="center"
@@ -64,14 +68,15 @@
 
     <ImageButton
         android:id="@+id/capitals"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:padding="10dp"
         android:layout_margin="10dp"
         android:layout_gravity="center"
         android:background="@drawable/capitals"/>
 
 
+</ScrollView>
 
 </LinearLayout>
 

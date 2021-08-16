@@ -15,7 +15,6 @@ class Topics_page : AppCompatActivity() {
         setContentView(R.layout.activity_topics_page)
         supportActionBar?.hide();
 
-
         wildlife.setOnClickListener {
 
             var intent = Intent(this,com.aacproject.example.quriosityquiz.wildlife::class.java)
