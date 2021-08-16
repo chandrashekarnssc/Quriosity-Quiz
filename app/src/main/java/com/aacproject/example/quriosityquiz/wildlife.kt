@@ -18,7 +18,7 @@ class wildlife : AppCompatActivity() {
 
 
     private var currentPosition:Int=1
-    private var questionList:ArrayList<QuestionData> ? = null
+    private var questionList:ArrayList<QuestionData>?=null
     private var selectedOption:Int=0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -130,7 +130,7 @@ class wildlife : AppCompatActivity() {
         }
     }
 
-    fun selectedOptionStyle(view: TextView,opt:Int){
+    fun selectedOptionStyle(view:TextView,opt:Int){
         setOptionStyle()
         selectedOption=opt
         view.background=ContextCompat.getDrawable(this,R.drawable.selected_question_option)
