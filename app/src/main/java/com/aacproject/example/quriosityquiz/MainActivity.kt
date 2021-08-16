@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_topics_page.*
@@ -22,12 +23,13 @@ class MainActivity : AppCompatActivity() {
             }
             else{
                 var intent = Intent(this,Topics_page::class.java)
+                intent.putExtra("${setData.name}",input.text.toString())
                 startActivity(intent)
                 finish()
+
             }
+
         }
-
-
 
 
     }

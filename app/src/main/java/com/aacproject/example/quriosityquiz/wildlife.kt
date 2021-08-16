@@ -1,5 +1,6 @@
 package com.aacproject.example.quriosityquiz
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
@@ -11,13 +12,19 @@ import kotlinx.android.synthetic.main.activity_wildlife.*
 
 class wildlife : AppCompatActivity() {
 
+    private var Name:String?=null
+    private var score:Int=0
+
+
     private var currentPosition:Int=1
     private var questionList:ArrayList<QuestionData> ? = null
     private var selectedOption:Int=0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wildlife)
-        supportActionBar?.hide();
+
+        Name=intent.getStringExtra(setData.name)
+
         setData.getQuestion()
 
         questionList=setData.getQuestion()
@@ -46,6 +53,8 @@ class wildlife : AppCompatActivity() {
                 if(selectedOption!=question.correct_ans)
                 {
                     setColor(selectedOption,R.drawable.wrong_question_option)
+                }else{
+                    score++;
                 }
                 setColor(question.correct_ans,R.drawable.correct_question_option)
                 if(currentPosition==questionList!!.size)
@@ -59,7 +68,12 @@ class wildlife : AppCompatActivity() {
                         setQuestion()
                     }
                     else->{
-                        Toast.makeText(this,"Hello",Toast.LENGTH_SHORT).show()
+                        var intent = Intent(this,Result::class.java)
+                        intent.putExtra(setData.name,Name.toString())
+                        intent.putExtra(setData.score,score.toString())
+                        intent.putExtra("total size", questionList!!.size.toString())
+                        startActivity(intent)
+                        finish()
                     }
                 }
             }

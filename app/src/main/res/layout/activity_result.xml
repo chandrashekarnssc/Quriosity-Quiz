@@ -22,6 +22,7 @@
             android:gravity="center"
             android:padding="10dp">
             <TextView
+                android:id="@+id/congo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Congratulations Name !!"
@@ -37,6 +38,7 @@
                 android:gravity="center"
                 android:textSize="14sp" />
             <TextView
+                android:id="@+id/Score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="4/5"
@@ -46,6 +48,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
             <Button
+                android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="FINISH"
