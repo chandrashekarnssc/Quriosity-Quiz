@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuriosityQuiz">
-        <activity android:name=".Result"></activity>
+        <activity android:name=".Result"
+            android:theme="@style/Theme.MyQuiz"></activity>
         <activity
             android:name=".cur_affairs"
             android:screenOrientation="portrait"
