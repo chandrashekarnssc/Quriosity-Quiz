@@ -26,8 +26,8 @@
 
     <ImageButton
         android:id="@+id/wildlife"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:padding="10dp"
         android:layout_marginTop="20dp"
         android:layout_margin="10dp"
@@ -37,8 +37,8 @@
 
     <ImageButton
         android:id="@+id/current_affairs"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:padding="10dp"
         android:layout_margin="10dp"
         android:layout_gravity="center"
@@ -46,8 +46,8 @@
 
     <ImageButton
         android:id="@+id/science"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:padding="10dp"
         android:layout_margin="10dp"
         android:layout_gravity="center"
@@ -55,8 +55,8 @@
 
     <ImageButton
         android:id="@+id/sports"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:padding="10dp"
         android:layout_margin="10dp"
         android:layout_gravity="center"
@@ -64,8 +64,8 @@
 
     <ImageButton
         android:id="@+id/capitals"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:padding="10dp"
         android:layout_margin="10dp"
         android:layout_gravity="center"
