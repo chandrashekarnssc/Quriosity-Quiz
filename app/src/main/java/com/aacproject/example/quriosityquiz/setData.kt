@@ -6,8 +6,8 @@ object setData {
     const val score:String="score"
 
     fun getQuestion():ArrayList<QuestionData>{
-        val que:ArrayList<QuestionData> = arrayListOf()
-        val q1=QuestionData(
+        var que:ArrayList<QuestionData> = arrayListOf()
+        var q1=QuestionData(
             "How many hearts does an octopus have",
             1,
             "9",
@@ -17,7 +17,7 @@ object setData {
             3
         )
 
-        val q2=QuestionData(
+        var q2=QuestionData(
             "Which animal has\n" +
                     "largest brain in the World",
         2,
@@ -28,7 +28,7 @@ object setData {
             4
         )
 
-        val q3=QuestionData(
+        var q3=QuestionData(
             "The age of a lion can be determined from its",
             3,
             "Color of nose",
@@ -38,7 +38,7 @@ object setData {
             1
         )
 
-        val q4=QuestionData(
+        var q4=QuestionData(
             "One horn rhino is found in",
             4,
             "Sumatra",
@@ -48,7 +48,7 @@ object setData {
             3
         )
 
-        val q5=QuestionData(
+        var q5=QuestionData(
             "Which one is the largest in size among the subspecies of tiger",
             5,
             "Siberian tiger ",

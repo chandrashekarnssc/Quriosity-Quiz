@@ -26,8 +26,6 @@ class wildlife : AppCompatActivity() {
 
         Name=intent.getStringExtra(setData.name)
 
-        setData.getQuestion()
-
         questionList=setData.getQuestion()
 
         setQuestion()
@@ -69,7 +67,7 @@ class wildlife : AppCompatActivity() {
                         setQuestion()
                     }
                     else->{
-                        val intent = Intent(this,Result::class.java)
+                        var intent = Intent(this,Result::class.java)
                         intent.putExtra(setData.name,Name.toString())
                         intent.putExtra(setData.score,score.toString())
                         intent.putExtra("total size", questionList!!.size.toString())
@@ -117,7 +115,7 @@ class wildlife : AppCompatActivity() {
     }
 
     fun setOptionStyle(){
-        val optionList:ArrayList<TextView> = arrayListOf()
+        var optionList:ArrayList<TextView> = arrayListOf()
         optionList.add(0,opt_1)
         optionList.add(0,opt_2)
         optionList.add(0,opt_3)
