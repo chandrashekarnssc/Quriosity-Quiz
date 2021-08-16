@@ -1,5 +1,6 @@
 package com.aacproject.example.quriosityquiz
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
@@ -68,7 +69,7 @@ class wildlife : AppCompatActivity() {
                         setQuestion()
                     }
                     else->{
-                        var intent = Intent(this,Result::class.java)
+                        val intent = Intent(this,Result::class.java)
                         intent.putExtra(setData.name,Name.toString())
                         intent.putExtra(setData.score,score.toString())
                         intent.putExtra("total size", questionList!!.size.toString())
@@ -101,6 +102,7 @@ class wildlife : AppCompatActivity() {
         }
 
     }
+
     fun setQuestion(){
         val question = questionList!![currentPosition-1]
         setOptionStyle()
@@ -115,7 +117,7 @@ class wildlife : AppCompatActivity() {
     }
 
     fun setOptionStyle(){
-        var optionList:ArrayList<TextView> = arrayListOf()
+        val optionList:ArrayList<TextView> = arrayListOf()
         optionList.add(0,opt_1)
         optionList.add(0,opt_2)
         optionList.add(0,opt_3)
