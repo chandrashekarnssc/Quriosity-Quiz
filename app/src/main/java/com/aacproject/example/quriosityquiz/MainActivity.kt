@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             }
             else{
                 var intent = Intent(this,Topics_page::class.java)
-                intent.putExtra(setData.name,input.text.toString())
+                intent.putExtra("${setData.name}",input.text.toString())
                 startActivity(intent)
                 finish()
 
