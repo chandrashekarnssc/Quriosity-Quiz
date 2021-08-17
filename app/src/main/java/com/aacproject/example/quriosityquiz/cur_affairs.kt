@@ -28,7 +28,7 @@ class cur_affairs : AppCompatActivity() {
 
         setData.getQuestion()
 
-        questionList=setData.getQuestion()
+        questionList=setData_curaff.getQuestion1()
 
         setQuestion()
         opt_1.setOnClickListener {

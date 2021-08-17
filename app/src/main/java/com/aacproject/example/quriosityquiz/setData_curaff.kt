@@ -4,7 +4,7 @@ object setData_curaff {
     const val name:String="name"
     const val score:String="score"
 
-    fun getQuestion():ArrayList<QuestionData>{
+    fun getQuestion1():ArrayList<QuestionData>{
         var que:ArrayList<QuestionData> = arrayListOf()
         var q1=QuestionData(
             "Which body has replaced Medical Council of India?",
