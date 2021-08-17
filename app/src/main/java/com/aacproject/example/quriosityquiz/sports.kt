@@ -11,7 +11,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_wildlife.*
 
-class Sports : AppCompatActivity() {
+class sports : AppCompatActivity() {
 
     private var Name:String?=null
     private var score:Int=0

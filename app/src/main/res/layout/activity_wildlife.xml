@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="10dp"
-    android:background="@drawable/bg_wildlife2">
+    android:background="@drawable/bg_wildlife">
 
     <TextView
         android:id="@+id/question_text"
