@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="10dp"
-    android:background="@drawable/bg_curraff1">
+    android:background="@drawable/news3">
 
     <TextView
         android:id="@+id/question_text"
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="ENTER YOUR QUESTION"
-        android:textSize="18sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/black"/>
 
