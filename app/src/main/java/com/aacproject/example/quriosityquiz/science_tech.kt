@@ -22,13 +22,13 @@ class science_tech : AppCompatActivity() {
     private var selectedOption:Int=0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_wildlife)
+        setContentView(R.layout.activity_science_tech)
 
-        Name=intent.getStringExtra(setData.name)
+        Name=intent.getStringExtra(setData_sci_tech.name)
 
-        setData.getQuestion()
+        setData_sci_tech.getQuestion4()
 
-        questionList=setData.getQuestion()
+        questionList=setData_sci_tech.getQuestion4()
 
         setQuestion()
         opt_1.setOnClickListener {

@@ -6,7 +6,7 @@ object setData_sports {
     const val name: String = "name"
     const val score: String = "score"
 
-    fun getQuestion(): ArrayList<QuestionData> {
+    fun getQuestion3(): ArrayList<QuestionData> {
         var que: ArrayList<QuestionData> = arrayListOf()
         var q1 = QuestionData(
             "Rovers Cup is related to which of the following sports?",

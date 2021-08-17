@@ -11,7 +11,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_wildlife.*
 
-class sports : AppCompatActivity() {
+class Sports : AppCompatActivity() {
 
     private var Name:String?=null
     private var score:Int=0
@@ -22,13 +22,13 @@ class sports : AppCompatActivity() {
     private var selectedOption:Int=0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_wildlife)
+        setContentView(R.layout.activity_sports)
 
-        Name=intent.getStringExtra(setData.name)
+        Name=intent.getStringExtra(setData_sports.name)
 
-        setData.getQuestion()
+        setData_sports.getQuestion3()
 
-        questionList=setData.getQuestion()
+        questionList=setData_sports.getQuestion3()
 
         setQuestion()
         opt_1.setOnClickListener {

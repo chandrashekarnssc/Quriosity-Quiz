@@ -22,13 +22,13 @@ class capitals : AppCompatActivity() {
     private var selectedOption:Int=0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_wildlife)
+        setContentView(R.layout.activity_capitals)
 
-        Name=intent.getStringExtra(setData.name)
+        Name=intent.getStringExtra(setData_capitals.name)
 
-        setData.getQuestion()
+        setData_capitals.getQuestion2()
 
-        questionList=setData.getQuestion()
+        questionList=setData_capitals.getQuestion2()
 
         setQuestion()
         opt_1.setOnClickListener {

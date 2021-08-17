@@ -22,11 +22,11 @@ class cur_affairs : AppCompatActivity() {
     private var selectedOption:Int=0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_wildlife)
+        setContentView(R.layout.activity_cur_affairs)
 
-        Name=intent.getStringExtra(setData.name)
+        Name=intent.getStringExtra(setData_curaff.name)
 
-        setData.getQuestion()
+        setData_curaff.getQuestion1()
 
         questionList=setData_curaff.getQuestion1()
 

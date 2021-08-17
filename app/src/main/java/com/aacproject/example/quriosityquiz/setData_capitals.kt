@@ -4,7 +4,7 @@ object setData_capitals {
     const val name:String="name"
     const val score:String="score"
 
-    fun getQuestion():ArrayList<QuestionData>{
+    fun getQuestion2():ArrayList<QuestionData>{
         var que:ArrayList<QuestionData> = arrayListOf()
         var q1=QuestionData(
             "Dinar is the currency of which of the following countries?",

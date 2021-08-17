@@ -4,7 +4,7 @@ object setData_sci_tech {
     const val name:String="name"
     const val score:String="score"
 
-    fun getQuestion():ArrayList<QuestionData>{
+    fun getQuestion4():ArrayList<QuestionData>{
         var que:ArrayList<QuestionData> = arrayListOf()
         var q1=QuestionData(
             "In reference to Defence Research and Development Organization (DRDO), the Microwave Tube Research and Development Center is located in",

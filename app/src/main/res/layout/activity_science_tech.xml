@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="10dp"
-    android:background="@drawable/layout">
+    android:background="@drawable/bg_sciandtech">
 
     <TextView
         android:layout_width="match_parent"
