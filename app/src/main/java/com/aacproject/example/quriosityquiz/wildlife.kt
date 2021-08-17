@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.activity_wildlife.*
 
 class wildlife : AppCompatActivity() {
 
-    private var Name:String?=null
+
     private var score:Int=0
 
 
@@ -24,7 +24,7 @@ class wildlife : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wildlife)
 
-        Name=intent.getStringExtra(setData.name)
+
 
         questionList=setData.getQuestion()
 
@@ -68,7 +68,7 @@ class wildlife : AppCompatActivity() {
                     }
                     else->{
                         var intent = Intent(this,Result::class.java)
-                        intent.putExtra(setData.name,Name.toString())
+
                         intent.putExtra(setData.score,score.toString())
                         intent.putExtra("total size", questionList!!.size.toString())
                         startActivity(intent)

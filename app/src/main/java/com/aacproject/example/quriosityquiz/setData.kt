@@ -2,7 +2,7 @@ package com.aacproject.example.quriosityquiz
 
 object setData {
 
-    const val name:String="name"
+
     const val score:String="score"
 
     fun getQuestion():ArrayList<QuestionData>{
